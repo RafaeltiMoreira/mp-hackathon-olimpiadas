@@ -27,7 +27,9 @@ export function App() {
   return (
     <div className="max-w-[1216px] mx-auto p-5 sm:flex sm:flex-col gap-5 table">
       <ThemeProvider storageKey="olimpic-theme" defaultTheme="light">
-      <RouterProvider router={router} />
+        <div className="flex-grow">
+          <RouterProvider router={router} />
+        </div>
       </ThemeProvider>
     </div>
   )
